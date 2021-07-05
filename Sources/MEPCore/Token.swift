@@ -8,8 +8,8 @@
 import Foundation
 
 public final class Token: Codable {
-    var id: UUID?
-    var value: String
+    public var id: UUID?
+    public var value: String
     
     init(value: String) {
         self.value = value

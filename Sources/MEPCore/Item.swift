@@ -8,13 +8,13 @@
 import Foundation
 
 public final class Item: Codable {
-    var id: UUID?
-    var name: String
-    var asile: String
-    var quantity: Double
-    var unit: String
-    var purchased: Bool
-    var list: ListUser
+    public var id: UUID?
+    public var name: String
+    public var asile: String
+    public var quantity: Double
+    public var unit: String
+    public var purchased: Bool
+    public var list: ListUser
     
     init(name: String, asile: String, quantity: Double, unit: String, purchased: Bool, listID: UUID) {
         self.name = name

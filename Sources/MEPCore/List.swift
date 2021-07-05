@@ -8,8 +8,8 @@
 import Foundation
 
 public final class List: Codable {
-    var id: UUID?
-    var name: String
+    public var id: UUID?
+    public var name: String
     
     init(name: String) {
         self.name = name

@@ -7,11 +7,11 @@
 
 import Foundation
 
-final class CreateUserData: Codable {
-    var id: UUID?
-    var name: String
-    var username: String
-    var password: String?
+public final class CreateUserData: Codable {
+    public var id: UUID?
+    public var name: String
+    public var username: String
+    public var password: String?
    
     init(name: String, username: String, password: String) {
         self.name = name
