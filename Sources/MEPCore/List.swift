@@ -14,4 +14,6 @@ public final class List: Codable {
     init(name: String) {
         self.name = name
     }
+    
+    public static var example = List(name: "Market Basket")
 }

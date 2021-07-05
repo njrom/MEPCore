@@ -16,4 +16,6 @@ final class User: Codable {
         self.name = name
         self.username = username
     }
+    
+    public static var example = User(name: "Nick Romano", username: "njrom")
 }

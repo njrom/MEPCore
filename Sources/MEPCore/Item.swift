@@ -25,6 +25,8 @@ public final class Item: Codable {
         let list = ListUser(id: listID)
         self.list = list
     }
+    
+    public static var example = Item(name: "Non Dairy Ice Cream", asile: "Frozen Food", quantity: 1, unit: "Pint", purchased: false, listID: UUID())
 }
 
 public final class ListUser: Codable {

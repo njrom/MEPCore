@@ -18,4 +18,5 @@ final class CreateUserData: Codable {
         self.username = username
         self.password = password
     }
+    
 }
