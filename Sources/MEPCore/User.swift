@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class User: Codable {
+public final class User: Codable, Identifiable {
     public var id: UUID?
     public var name: String
     public var username: String

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class Token: Codable {
+public final class Token: Codable, Identifiable {
     public var id: UUID?
     public var value: String
     
