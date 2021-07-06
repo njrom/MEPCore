@@ -27,6 +27,17 @@ public final class Item: Codable {
     }
     
     public static var example = Item(name: "Non Dairy Ice Cream", asile: "Frozen Food", quantity: 1, unit: "Pint", purchased: false, listID: UUID())
+    
+    public static var examples = [
+        Item(name: "Non Dairy Ice Cream", asile: "Frozen Food", quantity: 1, unit: "Pint", purchased: false, listID: UUID()),
+        Item(name: "Blueberries", asile: "Frozen Food", quantity: 1, unit: "Bag", purchased: false, listID: UUID()),
+        Item(name: "Chicken", asile: "Meat", quantity: 2, unit: "lbs", purchased: false, listID: UUID()),
+        Item(name: "Pork Shoulder", asile: "Meat", quantity: 9, unit: "lbs", purchased: false, listID: UUID()),
+        Item(name: "Oats", asile: "Cereals", quantity: 1, unit: "Box", purchased: false, listID: UUID()),
+        Item(name: "Whole Grain Cheerios", asile: "Cereals", quantity: 1, unit: "Box", purchased: false, listID: UUID()),
+        Item(name: "Tomato Paste", asile: "Canned Goods", quantity: 1, unit: "can", purchased: false, listID: UUID())
+        
+    ]
 }
 
 public final class ListUser: Codable {

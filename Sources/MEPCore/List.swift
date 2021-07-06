@@ -16,4 +16,5 @@ public final class List: Codable {
     }
     
     public static var example = List(name: "Market Basket")
+    
 }
