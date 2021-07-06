@@ -16,7 +16,7 @@ public final class Item: Codable, Identifiable {
     public var purchased: Bool
     public var list: ListUser
     
-    init(name: String, asile: String, quantity: Double, unit: String, purchased: Bool, listID: UUID) {
+    init(name: String, asile: String, quantity: Double, unit: String, purchased: Bool, listID: UUID, id: UUID? = nil) {
         self.name = name
         self.asile = asile
         self.quantity = quantity
@@ -24,18 +24,19 @@ public final class Item: Codable, Identifiable {
         self.purchased = purchased
         let list = ListUser(id: listID)
         self.list = list
+        self.id = id
     }
     
     public static var example = Item(name: "Non Dairy Ice Cream", asile: "Frozen Food", quantity: 1, unit: "Pint", purchased: false, listID: UUID())
     
     public static var examples = [
-        Item(name: "Non Dairy Ice Cream", asile: "Frozen Food", quantity: 1, unit: "Pint", purchased: false, listID: UUID()),
-        Item(name: "Blueberries", asile: "Frozen Food", quantity: 1, unit: "Bag", purchased: false, listID: UUID()),
-        Item(name: "Chicken", asile: "Meat", quantity: 2, unit: "lbs", purchased: false, listID: UUID()),
-        Item(name: "Pork Shoulder", asile: "Meat", quantity: 9, unit: "lbs", purchased: false, listID: UUID()),
-        Item(name: "Oats", asile: "Cereals", quantity: 1, unit: "Box", purchased: false, listID: UUID()),
-        Item(name: "Whole Grain Cheerios", asile: "Cereals", quantity: 1, unit: "Box", purchased: false, listID: UUID()),
-        Item(name: "Tomato Paste", asile: "Canned Goods", quantity: 1, unit: "can", purchased: false, listID: UUID())
+        Item(name: "Non Dairy Ice Cream", asile: "Frozen Food", quantity: 1, unit: "Pint", purchased: false, listID: UUID(), id: UUID()),
+        Item(name: "Blueberries", asile: "Frozen Food", quantity: 1, unit: "Bag", purchased: false, listID: UUID(), id: UUID()),
+        Item(name: "Chicken", asile: "Meat", quantity: 2, unit: "lbs", purchased: false, listID: UUID(), id: UUID()),
+        Item(name: "Pork Shoulder", asile: "Meat", quantity: 9, unit: "lbs", purchased: false, listID: UUID(), id: UUID()),
+        Item(name: "Oats", asile: "Cereals", quantity: 1, unit: "Box", purchased: false, listID: UUID(), id: UUID()),
+        Item(name: "Whole Grain Cheerios", asile: "Cereals", quantity: 1, unit: "Box", purchased: false, listID: UUID(), id: UUID()),
+        Item(name: "Tomato Paste", asile: "Canned Goods", quantity: 1, unit: "can", purchased: false, listID: UUID(), id: UUID())
         
     ]
 }
