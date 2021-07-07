@@ -12,4 +12,5 @@ public enum Asile: String, CaseIterable {
     case meat = "Meat"
     case cereals = "Cereals"
     case cannedGoods = "Canned Goods"
+    case produce = "Produce"
 }
