@@ -10,13 +10,13 @@ import Foundation
 public final class Item: Codable, Identifiable {
     public var id: UUID?
     public var name: String
-    public var asile: String
+    public var asile: Asile
     public var quantity: Double
     public var unit: String
     public var purchased: Bool
     public var list: ListUser
     
-    init(name: String, asile: String, quantity: Double, unit: String, purchased: Bool, listID: UUID, id: UUID? = nil) {
+    init(name: String, asile: Asile, quantity: Double, unit: String, purchased: Bool, listID: UUID, id: UUID? = nil) {
         self.name = name
         self.asile = asile
         self.quantity = quantity
@@ -27,16 +27,16 @@ public final class Item: Codable, Identifiable {
         self.id = id
     }
     
-    public static var example = Item(name: "Non Dairy Ice Cream", asile: "Frozen Food", quantity: 1, unit: "Pint", purchased: false, listID: UUID())
+    public static var example = Item(name: "Non Dairy Ice Cream", asile: .frozenFood, quantity: 1, unit: "Pint", purchased: false, listID: UUID())
     
     public static var examples = [
-        Item(name: "Non Dairy Ice Cream", asile: "Frozen Food", quantity: 1, unit: "Pint", purchased: false, listID: UUID(), id: UUID()),
-        Item(name: "Blueberries", asile: "Frozen Food", quantity: 1, unit: "Bag", purchased: false, listID: UUID(), id: UUID()),
-        Item(name: "Chicken", asile: "Meat", quantity: 2, unit: "lbs", purchased: false, listID: UUID(), id: UUID()),
-        Item(name: "Pork Shoulder", asile: "Meat", quantity: 9, unit: "lbs", purchased: false, listID: UUID(), id: UUID()),
-        Item(name: "Oats", asile: "Cereals", quantity: 1, unit: "Box", purchased: false, listID: UUID(), id: UUID()),
-        Item(name: "Whole Grain Cheerios", asile: "Cereals", quantity: 1, unit: "Box", purchased: false, listID: UUID(), id: UUID()),
-        Item(name: "Tomato Paste", asile: "Canned Goods", quantity: 1, unit: "can", purchased: false, listID: UUID(), id: UUID())
+        Item(name: "Non Dairy Ice Cream", asile: .frozenFood, quantity: 1, unit: "Pint", purchased: false, listID: UUID(), id: UUID()),
+        Item(name: "Blueberries", asile: .frozenFood, quantity: 1, unit: "Bag", purchased: false, listID: UUID(), id: UUID()),
+        Item(name: "Chicken", asile: .meat, quantity: 2, unit: "lbs", purchased: false, listID: UUID(), id: UUID()),
+        Item(name: "Pork Shoulder", asile: .meat, quantity: 9, unit: "lbs", purchased: false, listID: UUID(), id: UUID()),
+        Item(name: "Oats", asile: .cereals, quantity: 1, unit: "Box", purchased: false, listID: UUID(), id: UUID()),
+        Item(name: "Whole Grain Cheerios", asile: .cereals, quantity: 1, unit: "Box", purchased: false, listID: UUID(), id: UUID()),
+        Item(name: "Tomato Paste", asile: .cannedGoods, quantity: 1, unit: "can", purchased: false, listID: UUID(), id: UUID())
         
     ]
 }
