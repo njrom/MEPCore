@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum Asile: String, CaseIterable {
+public enum Asile: String, CaseIterable, Codable {
     case frozenFood = "Frozen Food"
     case meat = "Meat"
     case cereals = "Cereals"
