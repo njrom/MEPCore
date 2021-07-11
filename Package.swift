@@ -21,8 +21,5 @@ let package = Package(
         .target(
             name: "MEPCore",
             dependencies: []),
-        .testTarget(
-            name: "MEPCoreTests",
-            dependencies: ["MEPCore"]),
     ]
 )
