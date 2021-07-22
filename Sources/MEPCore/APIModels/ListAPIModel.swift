@@ -9,7 +9,7 @@ import Foundation
 
 public struct ListAPIModel: Codable {
     public let id: UUID
-    public let name: String
+    public var name: String
     
     public init(
         id: UUID,

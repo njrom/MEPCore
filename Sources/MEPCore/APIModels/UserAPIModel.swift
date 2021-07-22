@@ -9,8 +9,8 @@ import Foundation
 
 public struct UserAPIModel: Codable {
     public let id: UUID
-    public let name: String
-    public let username: String
+    public var name: String
+    public var username: String
     
     public init(id: UUID, name: String, username: String) {
         self.id = id

@@ -8,12 +8,12 @@
 import Foundation
 
 public struct ItemAPIModel: Codable {
-    public let id: UUID
-    public let name: String
-    public let asile: String
-    public let quantity: Double
-    public let unit: String
-    public let purchased: Bool
+    public var id: UUID
+    public var name: String
+    public var asile: String
+    public var quantity: Double
+    public var unit: String
+    public var purchased: Bool
     
     public init(
         id: UUID,
@@ -33,9 +33,7 @@ public struct ItemAPIModel: Codable {
 
     }
     
-//    init(item: Item) throws {
-//        try self.init(id: item.requireID(), name: item.name, asile: item.asile, quantity: item.quantity, unit: item.unit, purchased: item.purchased)
-//    }
+
 }
 
 extension ItemAPIModel {
@@ -56,8 +54,6 @@ extension ItemAPIModel {
             self.listID = listID
         }
         
-//        func makeItem() -> Item {
-//            Item(name: name, asile: asile, quantity: quantity, unit: unit, listID: listID)
-//        }
+
     }
 }
