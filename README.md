@@ -1,3 +1,3 @@
 # MEPCore
 
-A description of this package.
+Core shared model for Mise en Place
