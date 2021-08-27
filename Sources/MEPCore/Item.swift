@@ -14,6 +14,7 @@ public final class Item: Codable, Identifiable {
     public var quantity: Double
     public var unit: String
     public var purchased: Bool
+    public var datePurchased: Date?
     public var list: ListUser
     
     init(name: String, asile: Asile, quantity: Double, unit: String, purchased: Bool, listID: UUID, id: UUID? = nil) {

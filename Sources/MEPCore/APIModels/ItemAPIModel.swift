@@ -14,6 +14,7 @@ public struct ItemAPIModel: Codable {
     public var quantity: Double
     public var unit: String
     public var purchased: Bool
+    public var datePurchased: Date?
     
     public init(
         id: UUID,
@@ -21,8 +22,8 @@ public struct ItemAPIModel: Codable {
         asile: String,
         quantity: Double,
         unit: String,
-        purchased: Bool
-
+        purchased: Bool,
+        datePurchased: Date? = nil
     ) {
         self.id = id
         self.name = name
@@ -30,6 +31,7 @@ public struct ItemAPIModel: Codable {
         self.quantity = quantity
         self.unit = unit
         self.purchased = purchased
+        self.datePurchased = datePurchased
 
     }
     
