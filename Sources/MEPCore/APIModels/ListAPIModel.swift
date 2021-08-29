@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct ListAPIModel: Codable {
+public struct ListAPIModel: Codable, Equatable  {
     public let id: UUID
     public var name: String
     

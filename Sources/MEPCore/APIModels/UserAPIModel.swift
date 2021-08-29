@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct UserAPIModel: Codable {
+public struct UserAPIModel: Codable, Equatable  {
     public let id: UUID
     public var name: String
     public var username: String

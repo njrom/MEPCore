@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct ItemAPIModel: Codable {
+public struct ItemAPIModel: Codable, Equatable {
     public var id: UUID
     public var name: String
     public var asile: String
