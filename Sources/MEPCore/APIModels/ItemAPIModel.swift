@@ -23,7 +23,7 @@ public struct ItemAPIModel: Codable {
         quantity: Double,
         unit: String,
         purchased: Bool,
-        datePurchased: Date?
+        datePurchased: Date? = nil
     ) {
         self.id = id
         self.name = name
